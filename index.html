@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jeu de conquête réaliste</title>
+  <meta name="description" content="Un jeu de conquête réaliste pour les joueurs sur téléphone ou ordinateur.">
+  <style>
+    :root {
+      --fond: #14130f;
+      --surface: #1f1d17;
+      --bordure: #3a362b;
+      --texte: #ece6d6;
+      --texte-doux: #b3ab97;
+      --accent: #c9a23f;
+      --accent-texte: #14130f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: max(48px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) 48px max(20px, env(safe-area-inset-left));
+    }
+
+    .etiquette {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(36px, 10vw, 64px);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+
+    .accroche {
+      margin: 0 0 40px;
+      color: var(--texte-doux);
+      font-size: clamp(18px, 4.6vw, 22px);
+      text-wrap: pretty;
+    }
+
+    .avantages {
+      list-style: none;
+      margin: 0 0 40px;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .avantages li {
+      background: var(--surface);
+      border: 1px solid var(--bordure);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .avantages strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+
+    .avantages span {
+      color: var(--texte-doux);
+    }
+
+    .bouton {
+      display: block;
+      width: 100%;
+      min-height: 52px;
+      padding: 15px 24px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--accent-texte);
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.1s ease, background-color 0.2s ease;
+    }
+
+    .bouton:hover { background: #dbb44f; }
+    .bouton:active { transform: scale(0.97); }
+    .bouton:focus-visible {
+      outline: 3px solid var(--texte);
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 24px 20px max(24px, env(safe-area-inset-bottom));
+      text-align: center;
+      color: var(--texte-doux);
+      font-size: 14px;
+    }
+
+    @media (min-width: 600px) {
+      .avantages { grid-template-columns: repeat(3, 1fr); }
+      .bouton { display: inline-block; width: auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bouton { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="etiquette">Stratégie &amp; conquête</p>
+    <h1>Jeu de conquête réaliste</h1>
+    <p class="accroche">Pour les joueurs sur téléphone ou ordinateur qui veulent conquérir le monde, une décision après l'autre.</p>
+
+    <ul class="avantages">
+      <li>
+        <strong>Réaliste</strong>
+        <span>Chaque choix a des conséquences crédibles.</span>
+      </li>
+      <li>
+        <strong>Partout</strong>
+        <span>Joue sur ton téléphone ou ton ordinateur.</span>
+      </li>
+      <li>
+        <strong>Stratégique</strong>
+        <span>La réflexion compte plus que la chance.</span>
+      </li>
+    </ul>
+
+    <!-- Remplace l'adresse ci-dessous par ta vraie adresse e-mail -->
+    <a class="bouton" href="mailto:contact@exemple.fr?subject=Jeu%20de%20conqu%C3%AAte%20r%C3%A9aliste">Me contacter</a>
+  </main>
+
+  <footer>Jeu de conquête réaliste</footer>
+</body>
+</html>
