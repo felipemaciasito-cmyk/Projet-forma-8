@@ -16,6 +16,7 @@ Il s'adresse aux joueurs mobiles de 10 à 35 ans, pour s'amuser en quelques minu
 - La page doit être lisible sur un écran d'iPhone : balise `viewport` présente, texte de 16 px minimum, pas de défilement horizontal.
 - Aucun service extérieur : pas de CDN, pas de police en ligne, pas de script ni d'image venant d'une autre adresse.
 - La page doit s'ouvrir et marcher en double-cliquant sur `index.html`, sans serveur ni installation.
+- Les mots de passe et les clés ne vont jamais dans le dépôt.
 
 ## Avant chaque commit
 - Ouvre `index.html` à une largeur de 390 px (taille d'un iPhone) : tout le texte se lit et aucun bouton n'est coupé.
